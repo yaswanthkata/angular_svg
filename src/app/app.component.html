@@ -1,9 +1,4 @@
-<svg height="500" width="500">
-  <g ng-circle 
-    *ngFor="let circle of circles" 
-    [circle]="circle" />
-    
-  <g ng-line 
-    *ngFor="let line of lines" 
-    [line]="line" />
+<svg>
+  <g svg-circle [circle]="circle" (circleMousedown)="onCircleClick($event)"></g>
+  <g svg-line [line]="line" (lineMousedown)="onLineClick($event)"></g>
 </svg>

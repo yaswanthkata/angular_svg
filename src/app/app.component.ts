@@ -1,20 +1,26 @@
-import { Component, OnInit } from '@angular/core';
-import { Circle } from './models/circle.model';
-import { Line } from './models/line.model';
+import { Component } from '@angular/core';
+import { Circle, Line } from './models';
+
 @Component({
-  selector: 'app-root',
+  selector: 'svg-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
 
-  private circles: Circle[];
-  private lines: Line[];
-  ngOnInit(): void {
-    this.circles = [{ x: 20, y: 50, r: 10 }, { x: 20, y: 150, r: 15 }, { x: 20, y: 250, r: 20 }, { x: 20, y: 350, r: 25 }];
-    this.lines = [{ x1: 130, y1: 20, x2: 300, y2: 20 } ,{ x1: 130, y1: 50, x2: 400, y2: 50 }];
+  public circle: Circle;
+  public line: Line;
+  constructor() {
+    this.circle = { cx: 50, cy: 50, radius: 10, stroke: null };
+    this.line = { x1: 100, y1: 100, x2: 1000, y2: 300, stroke: null };
   }
-  title = 'app works!';
+  title = 'app';
 
+  public onCircleClick(event): void {
+    console.log(event);
+  }
 
+  public onLineClick(event): void {
+    console.log(event);
+  }
 }

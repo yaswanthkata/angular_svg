@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LineComponent } from './line.component';
+import { SvgcircleComponent } from './svgcircle.component';
 
-describe('LineComponent', () => {
-  let component: LineComponent;
-  let fixture: ComponentFixture<LineComponent>;
+describe('SvgcircleComponent', () => {
+  let component: SvgcircleComponent;
+  let fixture: ComponentFixture<SvgcircleComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ LineComponent ]
+      declarations: [ SvgcircleComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(LineComponent);
+    fixture = TestBed.createComponent(SvgcircleComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

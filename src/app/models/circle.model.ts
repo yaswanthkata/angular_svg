@@ -1,5 +1,11 @@
+import { Stroke } from './stroke.model';
+
 export class Circle {
-    public x: number;
-    public y: number;
-    public r: number;
+    cx: number;
+    cy: number;
+    radius: number;
+    stroke: Stroke;
+    constructor() {
+         this.stroke = new Stroke();
+    }
 }

@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CircleComponent } from './circle.component';
+import { SvgpolygonComponent } from './svgpolygon.component';
 
-describe('CircleComponent', () => {
-  let component: CircleComponent;
-  let fixture: ComponentFixture<CircleComponent>;
+describe('SvgpolygonComponent', () => {
+  let component: SvgpolygonComponent;
+  let fixture: ComponentFixture<SvgpolygonComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CircleComponent ]
+      declarations: [ SvgpolygonComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CircleComponent);
+    fixture = TestBed.createComponent(SvgpolygonComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
