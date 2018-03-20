@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { TimelineModule } from 'ng4-timeline';
 
 import { AppComponent } from './app.component';
 
@@ -9,7 +9,7 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule, TimelineModule
   ],
   providers: [],
   bootstrap: [AppComponent]
